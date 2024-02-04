@@ -8,6 +8,6 @@ import { Component } from '@angular/core';
   styleUrl: './login-component.component.css'
 })
 
-export class LoginComponentComponent {
-
+export class LoginComponent {
+  title = 'LoginComponent';
 }

@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
   templateUrl: './register-component.component.html',
   styleUrl: './register-component.component.css'
 })
-export class RegisterComponentComponent {
 
+export class RegisterComponent {
+  title = 'RegisterComponent';
 }
