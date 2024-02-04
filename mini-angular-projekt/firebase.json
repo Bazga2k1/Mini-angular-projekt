@@ -1,0 +1,9 @@
+{
+  "hosting": [
+    {
+      "target": "mini-angular-projekt",
+      "source": ".",
+      "frameworksBackend": {}
+    }
+  ]
+}

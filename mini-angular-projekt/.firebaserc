@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "online-auto-kuca": {
+      "hosting": {
+        "mini-angular-projekt": [
+          "online-auto-kuca"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "online-auto-kuca"
+  }
+}
