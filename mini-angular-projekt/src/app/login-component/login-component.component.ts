@@ -19,7 +19,7 @@ export class LoginComponent {
   constructor(private router: Router) {}
 
   login() {
-    console.log('Login clicked');
+    console.log('Prijava');
   }
 
   navigateToRegister() {
