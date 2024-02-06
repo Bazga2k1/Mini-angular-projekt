@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { AngularFireAuth } from '@angular/fire/compat/auth';
-import { AngularFirestore } from '@angular/fire/compat/firestore';
+//import { AngularFireAuth } from '@angular/fire/compat/auth';
+//import { AngularFirestore } from '@angular/fire/compat/firestore';
 import { Router } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 
@@ -21,9 +21,12 @@ export class RegisterComponent {
   companyEmail: string = '';
   password: string = '';
 
-  constructor(private afAuth: AngularFireAuth, private firestore: AngularFirestore, private router: Router) {}
+  constructor(/*private afAuth: AngularFireAuth, private firestore: AngularFirestore,*/ private router: Router) {}
 
-  async register() {
+  register(){
+    console.log("Registracija");
+  }
+  /*async register() {
     try {
       const { user } = await this.afAuth.createUserWithEmailAndPassword(this.companyEmail, this.password);
       if (user) {
@@ -42,5 +45,5 @@ export class RegisterComponent {
     } catch (error) {
       console.error('Greška pri registraciji:', error);
     }
-  }
+  }*/
 }
