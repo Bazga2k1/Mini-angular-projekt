@@ -1,1 +1,20 @@
-<p>login-component works!</p>
+<div class="login-container">
+    <h2>Prijava</h2>
+  
+    <form (ngSubmit)="login()" #loginForm="ngForm">
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" [(ngModel)]="email" required>
+      </div>
+      <div>
+        <label for="password">Zaporka:</label>
+        <input type="password" id="password" name="password" [(ngModel)]="password" required>
+      </div>
+      <button type="submit">Prijava</button>
+    </form>
+  
+    <div class="register-button" align="center">
+        <button type="button" (click)="navigateToRegister()">Nemate račun? Registrirajte se sada!</button>
+    </div>
+  </div>
+  
