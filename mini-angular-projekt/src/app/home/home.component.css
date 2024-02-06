@@ -4,21 +4,32 @@
     margin: 10px;
     text-align: center;
   }
-  img {
+
+img {
     max-width: 100%;
     height: auto;
-  }
-  h2 {
+}
+
+h2 {
     margin-top: 10px;
-  }
-  .subtitle {
+}
+
+.subtitle {
     font-style: italic;
-  }
-  button {
+}
+
+button {
     margin-top: 10px;
     padding: 5px 10px;
     background-color: #3498db;
     color: #fff;
     border: none;
     cursor: pointer;
+}
+
+.car-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
   }
+  
