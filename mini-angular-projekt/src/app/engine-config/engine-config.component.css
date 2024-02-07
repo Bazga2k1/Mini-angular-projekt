@@ -1,0 +1,50 @@
+.engines-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+  
+.engine-group {
+    display: flex;
+    justify-content: space-around;
+}
+  
+.engine {
+    width: 150px;
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.engine-type {
+    padding: 10px;
+}
+  
+.engine img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+  
+.engine h2 {
+    font-size: 16px;
+    margin: 10px 0;
+}
+  
+.engine .subtitle {
+    font-size: 14px;
+}
+  
+.engine button {
+    background-color: #42e81c;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  
+.engine button:hover {
+    background-color: #9ff18c;
+    color: rgb(137, 137, 137);
+}  
