@@ -1,0 +1,51 @@
+.rims-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+  
+.rim-row {
+    display: flex;
+    justify-content: space-around;
+}
+  
+.rim {
+    width: 150px;
+    text-align: center;
+    border: 1px solid;
+    padding: 5px;
+}
+
+.rim-size{
+    padding: 15px;
+}
+  
+.rim img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+}
+  
+.rim h2 {
+    font-size: 16px;
+    margin: 10px 0;
+}
+  
+.rim .subtitle {
+    font-size: 14px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #42e81c;
+    color: #fff;
+    border-radius: 10px;
+    border-color: #fff;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #9ff18c;
+    color: rgb(137, 137, 137);
+}
