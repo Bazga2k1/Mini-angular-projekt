@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { FormsModule } from '@angular/forms';
-//import { AngularFireAuth } from '@angular/fire/compat/auth';
+import { AppComponent } from '../app.component';
 
 @Component({
   selector: 'app-login-component',
@@ -17,21 +17,19 @@ export class LoginComponent {
   email: string = '';
   password: string = '';
 
-  constructor(/*private afAuth: AngularFireAuth,*/ private router: Router) {}
+  constructor(private appComponent: AppComponent, private router: Router) {}
 
-  async login(){
-    console.log("Prijava");
-  }
-  
-  /*async login() {
-    try {
-      await this.afAuth.signInWithEmailAndPassword(this.email, this.password);
-      console.log('Korisnik prijavljen!');
+  login() {
+    const user = this.appComponent.users.find(u => u.companyEmail === this.email && u.password === this.password);
+    if (user) {
+      console.log('Prijava uspješna!');
       this.router.navigate(['/home']);
-    } catch (error) {
-      console.error('Greška u prijavi:', error);
+
+    } else {
+      console.error('Pogrešan email ili zaporka!');
+      window.location.reload();
     }
-  }*/
+  }
 
   navigateToRegister() {
     this.router.navigate(['/register']);

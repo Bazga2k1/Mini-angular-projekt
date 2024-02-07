@@ -1,8 +1,7 @@
 import { Component } from '@angular/core';
-//import { AngularFireAuth } from '@angular/fire/compat/auth';
-//import { AngularFirestore } from '@angular/fire/compat/firestore';
 import { Router } from '@angular/router';
 import { FormsModule } from '@angular/forms';
+import { AppComponent } from '../app.component';
 
 @Component({
   selector: 'app-register-component',
@@ -21,29 +20,26 @@ export class RegisterComponent {
   companyEmail: string = '';
   password: string = '';
 
-  constructor(/*private afAuth: AngularFireAuth, private firestore: AngularFirestore,*/ private router: Router) {}
+  constructor(private appComponent: AppComponent, private router: Router) {}
 
-  register(){
-    console.log("Registracija");
-  }
-  /*async register() {
-    try {
-      const { user } = await this.afAuth.createUserWithEmailAndPassword(this.companyEmail, this.password);
-      if (user) {
-        console.log('Korisnik ', user, ' registriran!');
+  register() {
+    const newUser = {
+      fullName: this.fullName,
+      companyName: this.companyName,
+      oib: this.oib,
+      email: this.companyEmail,
+      password: this.password
+    };
 
-        const userData = {
-          fullName: this.fullName,
-          companyName: this.companyName,
-          email: this.companyEmail,
-          oib: this.oib,
-        };
-
-        await this.firestore.collection('users').doc(user.uid).set(userData);
-        this.router.navigate(['/home']);
-      }
-    } catch (error) {
-      console.error('Greška pri registraciji:', error);
+    const existingUser = this.appComponent.users.find(u => u.companyEmail === this.companyEmail);
+    if (existingUser) {
+      console.error('Korisnik s ovim email-om već postoji!');
+      window.location.reload();
+      return;
     }
-  }*/
+
+    this.appComponent.users.push(newUser);
+    console.log('Novi korisnik ', newUser, 'registriran!');
+    this.router.navigate(['/home']);
+  }
 }
