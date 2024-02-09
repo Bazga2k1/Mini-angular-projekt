@@ -1,0 +1,57 @@
+.interior-container{
+    padding: 20px;
+}
+
+.interior-package {
+    width: 80%;
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+  
+.interior-package img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+  
+.interior-package h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+  
+.interior-package .subtitle {
+    font-style: italic;
+    color: #666;
+}
+  
+.interior-package ul {
+    list-style-type: none;
+    padding: 0;
+}
+  
+.interior-package li {
+    margin-bottom: 5px;
+}
+  
+.interior-package .price {
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+}
+  
+.interior-package .button {
+    background-color: #42e81c;
+    color: #fff;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+  
+.interior-package .button:hover {
+    background-color: #9ff18c;
+    color: rgb(137, 137, 137);
+}
+  
