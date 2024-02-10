@@ -1,0 +1,54 @@
+.color-selection-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+}
+  
+.color-section {
+    width: 300px;
+    text-align: center;
+}
+  
+.color-option {
+    margin-bottom: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 5px;
+}
+  
+.color-option img {
+    width: 85%;
+    height: auto;
+    margin-bottom: 10px;
+}
+  
+.color-option h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+  
+.color-option .subtitle {
+    font-style: italic;
+    color: #666;
+}
+  
+.color-option .price {
+    margin-top: 5px;
+    color: #333;
+}
+  
+.select-button {
+    background-color: #42e81c;
+    color: #fff;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+  
+.select-button:hover {
+    background-color: #9ff18c;
+    color: rgb(137, 137, 137);
+}
+  
