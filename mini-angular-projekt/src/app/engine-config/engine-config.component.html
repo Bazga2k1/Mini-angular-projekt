@@ -10,7 +10,7 @@
         <p class="specs">81kw, 200Nm</p>
         <p class="specs">6.8 L/100km</p>
         <p class="price">0€</p>
-        <button>Odabir</button>
+        <button (click)="selectEngine('35 TFSI', 0)">Odabir</button>
       </div>
       <div class="engine">
         <h2>45 TFSI</h2>
@@ -19,7 +19,7 @@
         <p class="specs">150kw, 320Nm</p>
         <p class="specs">5.6 L/100km</p>
         <p class="price">4000€</p>
-        <button>Odabir</button>
+        <button (click)="selectEngine('45 TFSI', 4000)">Odabir</button>
       </div>
       <div class="engine">
         <h2>50 TFSI</h2>
@@ -28,7 +28,7 @@
         <p class="specs">210kw, 410Nm</p>
         <p class="specs">7.0 L/100km</p>
         <p class="price">7500€</p>
-        <button>Odabir</button>
+        <button (click)="selectEngine('50 TFSI', 7500)">Odabir</button>
       </div>
     </div><hr width=5000px>
 
@@ -41,7 +41,7 @@
         <p class="specs">85 kW, 300 Nm</p>
         <p class="specs">3.5 l/100km</p>
         <p class="price">3000€</p>
-        <button>Odabir</button>
+        <button (click)="selectEngine('30 TDI', 3000)">Odabir</button>
       </div>
       <div class="engine">
         <h2>35 TDI</h2>
@@ -50,7 +50,7 @@
         <p class="specs">110 kW, 360 Nm</p>
         <p class="specs">3.7 l/100km</p>
         <p class="price">4000€</p>
-        <button>Odabir</button>
+        <button (click)="selectEngine('35 TDI', 4000)">Odabir</button>
       </div>
     </div>
   </div>

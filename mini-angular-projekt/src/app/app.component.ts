@@ -16,18 +16,9 @@ export class AppComponent {
     { fullName: 'Luka Modrić', companyName: 'Fix Marketing', oib: '8426900147', companyEmail: 'lmodric@fix.com', password: 'password2' },
     { fullName: 'Filip Stjepanović', companyName: 'IT Mraz', oib: '1548642017', companyEmail: 'mrazit@yahoo.com', password: 'password3' }
   ];
-/*
-  car: any = {
-    model: "",
-    rims: "",
-    engine: "",
-    interior: "",
-    color: "",
-    totalPrice: 0
-  };
-*/
+
   constructor(private router: Router) {}
-  navigateToLogin() {
-    this.router.navigate(['/login']);
-  }
+    navigateToLogin() {
+      this.router.navigate(['/login']);
+    }
 }

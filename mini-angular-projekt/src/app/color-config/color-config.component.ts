@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { SelectionService } from '../selection.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-color-config',
@@ -8,5 +10,12 @@ import { Component } from '@angular/core';
   styleUrl: './color-config.component.css'
 })
 export class ColorConfigComponent {
+
+  constructor(private selectionService: SelectionService, private router: Router) { }
+
+  selectColor(model: string, price: number) {
+    this.selectionService.setSelectedOptions({ colorModel: model, colorPrice: price });
+    this.router.navigate(['/total']);
+  }
 
 }
