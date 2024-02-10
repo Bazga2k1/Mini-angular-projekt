@@ -1,1 +1,41 @@
-<p>total works!</p>
+<h1 align="center">Pregled narudžbe</h1>
+<hr>
+
+<div class="total-container">
+    <div class="section">
+      <div class="card">
+        <h2 align="center">Automobil</h2><hr>
+        <h3>{{ this.selectionService.getCarModel() }}</h3>
+        <p>{{ this.selectionService.getCarPrice() }}€</p>
+      </div>
+      <div class="card">
+        <h2 align="center">Motor</h2><hr>
+        <h3>{{ this.selectionService.getEngineModel() }}</h3>
+        <p>{{ this.selectionService.getEnginePrice() }}€</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="card">
+        <h2 align="center">Naplatci</h2><hr>
+        <h3>{{ this.selectionService.getRimModel() }}</h3>
+        <p>{{ this.selectionService.getRimPrice() }}€</p>
+      </div>
+      <div class="card">
+        <h2 align="center">Paket interijera</h2><hr>
+        <h3>{{ this.selectionService.getInteriorModel() }}</h3>
+        <p>{{ this.selectionService.getInteriorPrice() }}€</p>
+      </div>
+      <div class="card">
+        <h2 align="center">Boja</h2><hr>
+        <h3>{{ this.selectionService.getColorModel() }}</h3>
+        <p>{{ this.selectionService.getColorPrice() }}€</p>
+      </div>
+    </div><br><hr>
+    <h1 align="center">Ukupna cijena</h1>
+    <h2 align="center">{{ this.selectionService.getCarPrice() + this.selectionService.getEnginePrice() +
+        this.selectionService.getRimPrice() + this.selectionService.getInteriorPrice() + this.selectionService.getColorPrice() }}€</h2>
+  </div>
+<div align="center">
+    <button align="center" class="button">Narudžba</button>
+</div>

@@ -35,7 +35,7 @@
     font-size: 14px;
 }
 
-button {
+.button {
     margin-top: 10px;
     padding: 5px 10px;
     background-color: #42e81c;
@@ -45,7 +45,7 @@ button {
     cursor: pointer;
 }
 
-button:hover{
+.button:hover{
     background-color: #9ff18c;
     color: rgb(137, 137, 137);
 }

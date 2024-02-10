@@ -14,7 +14,7 @@ export class EngineConfigComponent {
   constructor(private selectionService: SelectionService, private router: Router) { }
 
   selectEngine(model: string, price: number) {
-    this.selectionService.setSelectedOptions({ engineModel: model, rimPrice: price });
+    this.selectionService.setSelectedOptions({ engineModel: model, enginePrice: price });
     this.router.navigate(['/confI']);
   }
 

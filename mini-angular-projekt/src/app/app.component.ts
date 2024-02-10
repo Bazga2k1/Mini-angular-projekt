@@ -17,7 +17,7 @@ export class AppComponent {
     { fullName: 'Filip Stjepanović', companyName: 'IT Mraz', oib: '1548642017', companyEmail: 'mrazit@yahoo.com', password: 'password3' }
   ];
 
-  constructor(private router: Router) {}
+  constructor(public router: Router) {}
     navigateToLogin() {
       this.router.navigate(['/login']);
     }

@@ -12,6 +12,6 @@ import { Router } from '@angular/router';
 
 export class TotalComponent {
 
-  constructor(private selectionService: SelectionService, private router: Router) { }
+  constructor(public selectionService: SelectionService, private router: Router) { }
 
 }

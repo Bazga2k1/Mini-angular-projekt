@@ -1,0 +1,36 @@
+.total-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+  
+.section {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+  
+.card {
+    width: 30%;
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+  
+.button {
+    width: 300px;
+    height: 80px;
+    margin-top: 10px;
+    padding: 5px 20px;
+    background-color: #42e81c;
+    color: #fff;
+    border-radius: 10px;
+    border-color: #fff;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: #9ff18c;
+    color: rgb(137, 137, 137);
+}

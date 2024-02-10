@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { SelectionService } from '../selection.service';
 import { Router } from '@angular/router';
 
@@ -9,6 +9,7 @@ import { Router } from '@angular/router';
   templateUrl: './color-config.component.html',
   styleUrl: './color-config.component.css'
 })
+
 export class ColorConfigComponent {
 
   constructor(private selectionService: SelectionService, private router: Router) { }
@@ -16,6 +17,10 @@ export class ColorConfigComponent {
   selectColor(model: string, price: number) {
     this.selectionService.setSelectedOptions({ colorModel: model, colorPrice: price });
     this.router.navigate(['/total']);
+  }
+
+  ngOnInit(): void {
+    const selectedOptions = this.selectionService.getSelectedOptions();
   }
 
 }
