@@ -57,4 +57,8 @@ export class SelectionService {
   getColorPrice() {
     return this.selectedOptions.colorPrice;
   }
+
+  getOrderNumber(){
+    return this.selectedOptions.orderNo;
+  }
 }

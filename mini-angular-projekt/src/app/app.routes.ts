@@ -8,16 +8,18 @@ import { InteriorConfigComponent } from './interior-config/interior-config.compo
 import { ColorConfigComponent } from './color-config/color-config.component';
 import { TotalComponent } from './total/total.component';
 import { RegisterComponent } from './register-component/register-component.component';
+import { SuccessComponent } from './success/success.component';
 
 export const routes: Routes = [
     { path: 'home', component: HomeComponent },
     { path: 'login', component: LoginComponent },
     { path: 'register', component: RegisterComponent },
-    { path: 'confR', component: RimsConfigComponent},
-    { path: 'confE', component: EngineConfigComponent},
-    { path: 'confI', component: InteriorConfigComponent},
-    { path: 'confC', component: ColorConfigComponent},
-    { path: 'total', component: TotalComponent},
+    { path: 'confR', component: RimsConfigComponent },
+    { path: 'confE', component: EngineConfigComponent },
+    { path: 'confI', component: InteriorConfigComponent },
+    { path: 'confC', component: ColorConfigComponent },
+    { path: 'total', component: TotalComponent },
+    { path: 'success', component: SuccessComponent },
     { path: '', redirectTo: '/home', pathMatch: 'full' }
 ];
 

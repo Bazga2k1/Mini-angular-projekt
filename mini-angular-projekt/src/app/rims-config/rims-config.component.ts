@@ -16,9 +16,5 @@ export class RimsConfigComponent {
   selectRim(model: string, price: number) {
     this.selectionService.setSelectedOptions({ rimModel: model, rimPrice: price });
     this.router.navigate(['/confE']);
-    console.log(this.selectionService.getCarModel());
-    console.log(this.selectionService.getCarPrice());
-    console.log(this.selectionService.getRimModel());
-    console.log(this.selectionService.getRimPrice());
   }
 }
